@@ -184,7 +184,11 @@ def vote_command(obj, topic_id, value):
         rooms_service.add_vote(cursor, topic_id, value, obj['user'].id)
 
 
-@click.command()
+@run_command.group()
+def run():
+    pass
+
+
 @run_command.command("run-as-server")
 def run_server():
     server.run()
@@ -192,4 +196,3 @@ def run_server():
 
 if __name__ == '__main__':
     run_command()
-

@@ -1,7 +1,5 @@
 import os
 import click
-import uvicorn as uvicorn
-
 import server
 from database import database
 from rooms import rooms_service

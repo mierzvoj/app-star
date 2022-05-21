@@ -10,4 +10,4 @@ routes = [
 def run():
     app = Starlette(debug=True, routes=routes)
     uvicorn.run(app)
-    print("uvi started")
+
